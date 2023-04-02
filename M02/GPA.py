@@ -8,21 +8,23 @@
 
 
 
-# Asking the user for their last name
-last_name = input("What is your last name?:\n")
+# A while True loop to continue indefinitely
+while True:
+    # Asking the user for their last name
+    last_name = input("What is your last name?:\n")
 
-# It will continue if the last name is not ZZZ, and otherwise exit
-if last_name != 'ZZZ':
-    # Asking the user for their first name
-    first_name = input("What is your first name?:\n")
+    # It will continue if the last name is not ZZZ, and otherwise exit
+    if last_name != 'ZZZ':
+        # Asking the user for their first name
+        first_name = input("What is your first name?:\n")
 
-    # Asking the user for their GPA
-    gpa = float(input("What is your GPA?:\n"))
+        # Asking the user for their GPA
+        gpa = float(input("What is your GPA?:\n"))
 
-    # Checking if the user has made the Dean's List, or the Honor Roll.
-    if gpa >= 3.5:
-        print(f"Congrats {first_name} {last_name} you have made the Dean's List!")
-    elif gpa >= 3.25:
-        print(f"Congrats {first_name} {last_name} you have made the Honor Roll!")
-else:
-    exit
+        # Checking if the user has made the Dean's List, or the Honor Roll.
+        if gpa >= 3.5:
+            print(f"Congrats {first_name} {last_name} you have made the Dean's List!")
+        elif gpa >= 3.25:
+            print(f"Congrats {first_name} {last_name} you have made the Honor Roll!")
+    else:
+        exit
